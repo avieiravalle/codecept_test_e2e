@@ -4,7 +4,10 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'http://localhost',
-      show: true
+      show: true,
+         chromeOptions: {
+           args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+         }
     }
   },
   include: {
